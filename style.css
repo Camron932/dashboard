@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backgroundCont {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 3fr 1fr;
+    background-color: lightgray;
+    height: 49.5em;
+}
+
+.atCont {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    background-color: lightgray;
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+    
+.dashCont {
+    background-color: #7c3aed;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/6;
+    padding: 15px;
+}
+
+.searchCont {
+    display: flex;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 8em;
+}
+
+#projHead {
+    display: flex;
+    align-items: end;
+    font-size: 14px;
+    font-weight: 400;
+    height: 2em;
+    margin-left: 15px;
+}
+
+#dashHead {
+    font-size: 16px;
+    height: 2px;
+}
+
+.dashIcons {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) 2fr repeat(2, 1fr);
+}
+
+.dashLinks {
+    display: flex;
+    align-items: end;
+    font-size: 16px;
+}
+
+.projectsCont {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    background-color: lightgray;
+    height: 37.5em;
+}
+
+.projSec {
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.announceCont {
+
+}
+
+.trendCont {
+    grid-auto-rows: 2.5/4;
+}
+
+.projects {
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    border-left: orange 6px solid;
+    padding: 15px 10px 15px 10px;
+    letter-spacing: 1.5;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.projects>h2 {
+    font-size: 14px;
+}
+
+.projects>p {
+    font-size: 14px;
+    font-weight: 300;
+}
